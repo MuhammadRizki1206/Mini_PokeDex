@@ -78,15 +78,6 @@ export default function ComparePage() {
     setWinner(null);
   };
 
-  const handleBattle = () => {
-    if (!pokemon1 || !pokemon2) return;
-    const total1 = pokemon1.stats.reduce((sum, s) => sum + s.value, 0);
-    const total2 = pokemon2.stats.reduce((sum, s) => sum + s.value, 0);
-    if (total1 > total2) setWinner("pokemon1");
-    else if (total2 > total1) setWinner("pokemon2");
-    else setWinner("draw");
-  };
-
   return (
     <>
       <Head>
@@ -130,13 +121,6 @@ export default function ComparePage() {
 
         {pokemon1 && pokemon2 && (
           <>
-            <button
-              onClick={handleBattle}
-              className="mb-6 bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-2 rounded-full shadow transition"
-            >
-              ⚔ Simulate Battle
-            </button>
-
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
               {[pokemon1, pokemon2].map((p, idx) => (
                 <div

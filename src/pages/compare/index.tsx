@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import { Bar, Radar } from "react-chartjs-2";
+import Footer from "@/components/Footer";
 import Head from "next/head";
 import {
   Chart as ChartJS,
@@ -287,6 +288,7 @@ export default function ComparePage() {
           </>
         )}
       </div>
+      <Footer />
     </>
   );
 }

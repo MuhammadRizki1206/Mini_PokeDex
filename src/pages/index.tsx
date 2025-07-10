@@ -7,6 +7,7 @@ import Pagination from "@/components/Pagination";
 import Image from "next/image";
 import Head from "next/head";
 import LoadingSpinner from "@/components/LoadingSpinner";
+import Footer from "@/components/Footer";
 
 interface Pokemon {
   name: string;
@@ -169,6 +170,7 @@ export default function Home() {
           setPage={setPage}
           total={Math.ceil(filtered.length / limit)}
         />
+        <Footer />
       </div>
     </>
   );

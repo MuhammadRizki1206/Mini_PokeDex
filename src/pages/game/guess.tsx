@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Head from "next/head";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 interface Pokemon {
   name: string;
@@ -186,6 +187,7 @@ export default function GuessPage() {
           }
         `}</style>
       </div>
+      <Footer />
     </>
   );
 }

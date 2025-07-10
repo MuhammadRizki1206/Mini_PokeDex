@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
 import LoadingSpinner from "@/components/LoadingSpinner";
+import Footer from "@/components/Footer";
 
 interface EvolutionItem {
   name: string;
@@ -257,6 +258,7 @@ export default function PokemonDetail() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

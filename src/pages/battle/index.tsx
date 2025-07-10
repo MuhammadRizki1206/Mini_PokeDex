@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
+import Footer from "@/components/Footer";
 
 interface Pokemon {
   name: string;
@@ -276,6 +277,7 @@ export default function BattlePage() {
           </>
         )}
       </div>
+      <Footer />
     </>
   );
 }
